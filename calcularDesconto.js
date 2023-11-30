@@ -1,4 +1,4 @@
-const costomerChosenClient = [["camiseta", 300], ["bermuda", 80], ["bone", 95], ["celular", 900]]
+const costomerChosenClient = [["camiseta", 300], ["bermuda", 80], ["bone", 95]]
 
 const calculateCostomePurchases = (items) => {
     let totalValue = 0
@@ -14,7 +14,10 @@ const calculateCostomePurchases = (items) => {
         console.log(`Valor total das compras ${totalValue}`)
         console.log(`desconto de 10% aplicado`)
         console.log(`valor final: ${priceFinale}`)
+        return
     }
+
+    console.log(`Valor total: ${totalValue}`)
 }
 
 calculateCostomePurchases(costomerChosenClient)
